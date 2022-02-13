@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+h2 {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+p {
+  color: #406ca5;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+h3 {
+  color: #274164;
+  font-weight: 600;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+main {
+  font-family: "Poppins", san-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 90vh;
+  width: 60%;
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  margin: 2rem;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+
+.link {
+  display: flex;
+  margin: 1rem 0;
+  padding: 0.4rem 2rem;
+  align-items: center;
+}
+
+.link h2 {
+  padding: 0 2rem;
+}
+
+.pro {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.pro img {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.pro h2 {
+  width: 40%;
+  color: white;
+  font-weight: 600;
+}
+
+.games {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+.status {
+  margin-bottom: 0;
+}
+
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  border-radius: 2rem;
+  width: 60%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 1.2rem 0rem;
+  padding: 0.5rem 0.2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-evenly;
+}
+
+.progress1,
+.progress2,
+.progress3 {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 100%;
+  height: 8%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.progress1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 60%;
+}
+
+.progress2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 40%;
+}
+
+.progress3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 78%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.percentage {
+  font-weight: bold;
+}
+
+.user img {
+  border-radius: 50%;
+}
